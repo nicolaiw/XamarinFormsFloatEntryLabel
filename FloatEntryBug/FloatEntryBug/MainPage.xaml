@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FloatEntryBug"
+             x:Class="FloatEntryBug.MainPage">
+
+    <StackLayout>
+        <Label/>
+        <Label Text="CurrentCulture"/>
+        <Label Text="{Binding AppCulture}"/>
+        <Label/>
+        <Label Text="CurrentUICulture"/>
+        <Label Text="{Binding AppUiCulture}"/>
+        <Label/>
+
+        <!-- Float -->
+        <Label Text="{Binding FloatProp}"/>
+        <Entry Text="{Binding FloatProp}" Keyboard="Numeric"/>
+        <Label/>
+
+        <!-- Double -->
+        <Label Text="{Binding DoubleProp}"/>
+        <Entry Text="{Binding DoubleProp}" Keyboard="Numeric"/>
+        <Label/>
+
+        <!-- Decimal -->
+        <Label Text="{Binding DecimalProp}"/>
+        <Entry Text="{Binding DecimalProp}" Keyboard="Numeric"/>
+        <Label/>
+    </StackLayout>
+
+</ContentPage>
